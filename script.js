@@ -2,8 +2,7 @@ import { db } from "./firebase.js";
 
 import {
   collection,
-  addDoc,
-  serverTimestamp
+  addDoc
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
 
 const btn = document.getElementById("saveBtn");
@@ -35,7 +34,7 @@ btn.addEventListener("click", async () => {
 
             service: service,
             phone: phone,
-            createdAt: new Date().toISOString()
+            thoiGian: new Date().toISOString()
 
         });
 
