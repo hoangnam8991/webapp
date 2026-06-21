@@ -35,7 +35,7 @@ btn.addEventListener("click", async () => {
 
             service: service,
             phone: phone,
-            createdAt: serverTimestamp()
+            createdAt: new Date().toISOString()
 
         });
 
